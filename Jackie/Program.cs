@@ -37,11 +37,11 @@ namespace Jackie
             {
                 html.WriteLine("<!DOCTYPE html>");
                 html.WriteLine("<html lang=\"HU\">");
-                html.WriteLine("\t<head><style>td{border: solid 1px #000;}</style></head>");
+                html.WriteLine("\t<head><style>thead, td{border: solid 2px #000; text-align: center;}body{background-color: lightblue;}</style></head>");
                 html.WriteLine("\t<body>");
                 html.WriteLine("\t\t<h1>Jackie Stewart</h1>");
-                html.WriteLine("\t\t<table border=\"1px\">");
-                html.WriteLine("\t\t\t<thead><tr><th>Év</th><th>Versenyek száma</th><th>Győzelmek száma</th></tr></thead>");            //6. feladat a html oldal elkészitése
+                html.WriteLine("\t\t<table border=\"2px\">");
+                html.WriteLine("\t\t\t<thead><tr><th>Év</th><th>Versenyek</th><th>Győzelmek</th></tr></thead>");            //6. feladat a html oldal elkészitése
                 html.WriteLine("\t\t\t<tbody>");
                 foreach (Stat item in adatok.OrderByDescending(x => x.Ev))
                 {
